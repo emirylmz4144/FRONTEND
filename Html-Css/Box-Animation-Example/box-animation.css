@@ -1,0 +1,199 @@
+body{
+    animation-name: for-body;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+}
+.box{
+    display:inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    position: fixed;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+}
+.conteiner{
+    left: 20%;
+    animation-name: our-animation;
+    
+    
+}
+.conteiner2{
+    left: 40%;
+    animation-name: our-animation2;
+    animation-direction: alternate-reverse;
+    
+}
+.conteiner3{
+    left: 60%;
+    animation-name: our-animation3;
+    animation-direction: reverse;
+    
+}
+/*Gövdeye uygulanacak animasyon*/
+@keyframes for-body {
+    0%{
+       background-color: purple;
+       
+    }
+    25%{
+       background-color: green;
+    }
+    50%{
+        background-color: red;
+    }
+    75%{
+        background-color: yellow;
+    }
+    100%{
+        background-color: purple;
+    }
+    
+}
+
+
+/*1.kutuya uygulanacak animasyon özellikleri*/
+
+@keyframes our-animation {
+    0%{
+        background-color: aqua;
+        position: fixed;
+        left: 20%;
+        top: 0%;
+        
+    }
+    25%{
+        background-color: red;
+        position: fixed;
+        left: 40%;
+        top: 40%;
+        border-radius: 20px;
+        box-shadow: 4px 4px 4px 4px  lightpink;
+        border: 3px solid pink;
+        transform: rotate(180deg);
+    }
+    50%{
+        background-color: lightslategray;
+        position: fixed;
+        left: 60%;
+        top: 80%;
+        border-radius: 40px;
+        box-shadow: 8px 8px 8px 8px  lightpink;
+        border: 6px solid pink;
+        transform: rotate(360deg);
+    }
+    75%{
+        background-color: lightslategray;
+        position: fixed;
+        left: 40%;
+        top: 40%;
+        border-radius: 20px;
+        box-shadow: 4px 4px 4px 4px  lightpink;
+        border: 3px solid pink;
+        transform: rotate(180deg);
+    }
+    100%{
+        background-color: aqua;
+        position: fixed;
+        left: 20%;
+        top: 0%;
+       
+    }
+    
+}
+/*2.kutuya uygulanacak animasyon özellikleri*/
+@keyframes our-animation2{
+    0%{
+        background-color: aqua;
+        position: fixed;
+        left: 40%;
+        top: 0%;
+        
+    }
+    25%{
+        background-color: green;
+        position: fixed;
+        left: 40%;
+        top: 40%;
+        border-radius: 30px;
+        box-shadow: 5px 5px 5px 5px  orange;
+        border: 3px solid pink;
+        transform: rotate(60deg);
+    }
+    50%{
+        background-color: brown;
+        position: fixed;
+        left: 40%;
+        top: 80%;
+        border-radius: 60px;
+        box-shadow: 10px 10px 10px 10px  purple;
+        border: 6px solid pink;
+        transform: rotate(120deg);
+    }
+    75%{
+        background-color: green;
+        position: fixed;
+        left: 40%;
+        top: 40%;
+        border-radius: 30px;
+        box-shadow: 5px 5px 5px 5px  orange;
+        border: 3px solid pink;
+        transform: rotate(60deg);
+    }
+    100%{
+        background-color: aqua;
+        position: fixed;
+        left: 40%;
+        top: 0%;
+       
+        
+    }
+}
+/*3.kutuya uygulanacak animasyon özellikleri*/
+@keyframes our-animation3{
+    0%{
+        background-color: aqua;
+        position: fixed;
+        left: 60%;
+        top: 0%;
+        
+    }
+    25%{
+        background-color: yellow;
+        position: fixed;
+        left: 40%;
+        top: 40%;
+        border-radius: 40px;
+        box-shadow: 6px 6px 6px 6px  slateblue;
+        border: 3px solid pink;
+        transform: rotate(90deg);
+    }
+    50%{
+        background-color: maroon;
+        position: fixed;
+        left: 20%;
+        top: 80%;
+        border-radius: 80px;
+        box-shadow: 8px 8px 8px 8px  lightpink;
+        border: 6px solid pink;
+        transform: rotate(180deg);
+    }
+    75%{
+        background-color: maroon;
+        position: fixed;
+        left: 40%;
+        top: 40%;
+        border-radius: 40px;
+        box-shadow: 8px 8px 8px 8px  lightpink;
+        border: 6px solid pink;
+        transform: rotate(180deg);
+    }
+    100%{
+        background-color: aqua;
+        position: fixed;
+        left: 60%;
+        top: 0%;
+       
+        
+    }
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="look_at_this()">
+    <form >
+       Sayı: <input type="text" id="number_1"><br>
+       <input type="button" name="" id="calculate" value="Hesapla" style="margin-top: 10px; margin-left: 80px;" onclick="sqrt()"><hr>
+       Karesi: <span id="result"></span>
+
+       <script>
+        function look_at_this()
+        {
+            document.getElementById("number_1").focus();
+        }
+          function sqrt()
+          {
+            var x=document.getElementById("number_1").value;
+            if(x=="")
+            {
+                alert("Lütfen sayı giriniz");
+                document.getElementById("number_1").style.backgroundColor="red";
+            }
+            else
+            {
+                if(x<=0)
+                {
+                    alert("Lütfen geçerli bir sayı giriniz");
+                    document.getElementById("number_1").style.color="blue";
+                    document.getElementById("number_1").style.boxShadow="3px 3px 3px 3px";
+                }
+                else
+                {
+                    document.getElementById("result").innerHTML=x*x;
+                }
+            }
+            
+          }
+       </script>
+    </form>
+</body>
+</html>

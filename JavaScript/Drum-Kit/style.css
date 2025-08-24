@@ -1,0 +1,52 @@
+body {
+    /*Elementleri flexbox yaparak nizami conteiner görünümü ayarlar*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    background-image: url(images/Emir3.jpeg) ;
+    
+   
+  }
+  
+  .drum-kit {
+    /* ana conteinerın konumunu ayarlama*/
+    margin-top: -30%;
+    display: flex;
+    
+  }
+  
+  .key {
+    flex: 1;/* Tüm conteinerlar eşit boyutta olsun*/
+    background-color: aqua;
+    border: 2px solid #333;
+    border-radius: 10em;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.7s;/*Animasyonun oluşma süresi*/
+    cursor: pointer; 
+  }
+  
+  kbd {
+    display: block;
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+    font-family: cursive;
+  }
+  
+  .sound {
+    font-size: 0.8rem;
+    color: #f32a4fc0;
+    font-size: 90%;
+  }
+  .playing{
+    transform: rotate(20deg) scale(1.4) ;/*Tuşa basılınca animasyon ekleme*/
+  
+    border-color: #ffc600;
+    box-shadow: 0 0 10px  #ffc600;
+  }

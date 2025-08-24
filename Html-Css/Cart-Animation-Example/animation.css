@@ -1,0 +1,57 @@
+.conteiner{
+    width: 700px;
+    height: 300px;
+    margin-left: 230px;
+  
+}
+.box{
+    
+    width: 115px;
+    height: 100px;
+    margin-right: -40px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 300px;
+    opacity: 0.8;
+    transition: transform 3s,font-size 4s,border-radius 1s;
+    
+   
+    
+}
+.box1{
+    z-index: 4;
+    float: left;
+    background-color: lightblue;
+    transform: rotate(30deg);
+  
+}
+.box2{
+    z-index: 1;
+    float: left;
+    background-color: lightcoral;
+    transform: rotate(-30deg);
+  
+    
+}
+.box3{
+    z-index: 2;
+    float: left;
+    background-color: lightgreen;
+    transform: rotate(30deg);
+    
+}
+
+.box:hover{
+    position: relative;
+    transform: rotate(+180deg);
+    opacity: 1;
+    background-color: aqua;
+    font-size: xx-large;
+    cursor: pointer;
+    background-image: linear-gradient(to left,lightblue,lightsalmon);
+    border-radius: 50%;
+  
+   
+}

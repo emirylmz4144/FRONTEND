@@ -1,0 +1,45 @@
+body
+{
+    background-color: rgb(53, 53, 53);
+}
+.conteiner
+{
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 25%;
+    width: 60%;
+    border: 1px solid black;
+    background-color: aqua;
+    border-radius: 30px;
+    box-shadow: 20px -12px 400px 152px rgba(45,208,151,0.75);
+    -webkit-box-shadow: 20px -12px 400px 152px rgba(45,208,151,0.75);
+    -moz-box-shadow: 20px -12px 400px 152px rgba(45,208,151,0.75);
+}
+.add
+{
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 10%
+}
+.list
+{
+    margin-left: 15%;
+    margin-right: 20%;
+    margin-top: 10%
+}
+#submit
+{
+   
+    margin-left: 7%;
+    border-radius: 7px;
+    background-color: blueviolet;
+
+}
+#our-value
+{
+    border-radius: 10px;
+}
+.text
+{
+    color: darkred;
+}

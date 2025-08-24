@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Sayı: <input type="text"  id="number"><br>
+    <input type="button" id="submit" value="Kaydet" onclick="check()"><br>
+    Sonuc: <p id="isError"></p>
+    <script>
+        function check()
+        {
+            var x=document.getElementById("number").value;
+
+        try{
+            if(x=="") throw "Lütfen bir değer giriniz";
+            else if(x<=0) throw "Lütfen geçerli bir sayı giriniz";
+
+        }catch(error)
+        {
+            document.getElementById("isError").innerHTML="Hata "+error;
+        }
+        }
+    </script>
+</body>
+</html>

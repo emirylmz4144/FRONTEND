@@ -45,6 +45,7 @@ function newElement() {
   }
 }
 
+
 function deleteElement(event)
 {
   let eventSvg=event.target;
@@ -85,7 +86,7 @@ function checkButton()
    pathElement.setAttribute("d", "M 2.847656 4.792969 L 26.796875 4.792969 L 26.796875 24.390625 L 2.847656 24.390625 Z M 2.847656 4.792969 ");
    pathElement.setAttribute("clip-rule", "nonzero");
    pathElement.setAttribute("fill", "#0aa428");
-   
+
    // ClipPath elementine Path elementini ekle
    clipPathElement.appendChild(pathElement);
    

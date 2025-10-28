@@ -1,0 +1,9 @@
+.nav-text{
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+}
+.nav-text:hover{
+    background-color:;
+    color: white;
+}

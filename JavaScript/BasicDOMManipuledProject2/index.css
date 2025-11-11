@@ -1,0 +1,19 @@
+.conteiner {
+  margin: 4% 10%;
+  text-align: center;
+}
+
+.info {
+  margin-bottom: 3%;
+}
+
+li {
+  border-radius: 50%;
+  display: inline-block;
+  width: 15%;
+  background-color: cornsilk;
+  margin: 1%;
+  line-height: 300%;
+  list-style: none;
+  font-size: large;
+}
